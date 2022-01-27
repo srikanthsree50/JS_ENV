@@ -1,0 +1,9 @@
+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           //////////////NODEJS-ENV
+
+pm.environment.set("TOKEN",pm.response.json().token)
+
+// for getting updated with signup routes and login routes to avoid copy pasting tokens
+// goto headers -> select authorization -> nearer token set to {{TOKEN}}
+
+
+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           /////////////// JS_ENV
