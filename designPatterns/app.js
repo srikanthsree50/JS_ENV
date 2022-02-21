@@ -51,24 +51,76 @@
                                                         ///// SINGLETON PATTERN ////  
 
 
-    const Singleton = (function(){
+//     const Singleton = (function(){
 
-let instance;
+// let instance;
 
-function createInstance(){
-    const object = new Object('single instance created...');
-    return object;
-}
-return {
-getInstance : function () {
-    if(!instance){
-        instance = createInstance();
-    }
-    return instance;
-}
-}
-    })()
+// function createInstance(){
+//     const object = new Object('single instance created...');
+//     return object;
+// }
+// return {
+// getInstance : function () {
+//     if(!instance){
+//         instance = createInstance();
+//     }
+//     return instance;
+// }
+// }
+//     })()
 
-    Singleton.getInstance();             ///      always returns same instance //////
+//     Singleton.getInstance();             ///      always returns same instance //////
+
 
     
+
+                             ///////         FACTORY PATTERN /////////
+
+
+//         function MemberFactory() {
+// this.createMember = function(name,type){
+// let member;
+
+// if(type === 'simple'){
+// member = new SimpleMembership(name);
+// }
+
+// else if(type === 'standard'){
+//     member = new StandardMembership(name);
+//     }
+
+// else if(type === 'super'){
+//     member = new SuperMembership(name);
+//     }
+
+
+//     member.type = type;
+
+//     member.define = function(){
+//         console.log(`${this.name} ${this.type} : ${this.cost}`)
+//     }
+//     return member;
+
+// } 
+//         } 
+
+
+// const SimpleMembership = function(name){
+//     this.name = name;
+//     this.cost = '$5'
+// }
+
+// const StandardMembership = function(name){
+//     this.name = name;
+//     this.cost = '$50'
+// }
+
+// const SuperMembership = function(name){
+//     this.name = name;
+//     this.cost = '$500'
+// }
+// const members = [];
+// const factory = new MemberFactory();
+// members.push(factory.createMember('srikanth','super'));
+
+// console.log(members);
