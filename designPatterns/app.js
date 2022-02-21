@@ -47,3 +47,28 @@
      
 //      itemCntrl.add({id:561,name:'srikanth'});
      
+
+                                                        ///// SINGLETON PATTERN ////  
+
+
+    const Singleton = (function(){
+
+let instance;
+
+function createInstance(){
+    const object = new Object('single instance created...');
+    return object;
+}
+return {
+getInstance : function () {
+    if(!instance){
+        instance = createInstance();
+    }
+    return instance;
+}
+}
+    })()
+
+    Singleton.getInstance();             ///      always returns same instance //////
+
+    
